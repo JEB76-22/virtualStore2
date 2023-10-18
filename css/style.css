@@ -540,7 +540,7 @@ right: 0;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: 16px;
-  color: rgb(87, 86, 86) !important;
+  color: var(--blanco) !important;
   font-weight: 600;
 }
 .registro h1 {
@@ -615,14 +615,14 @@ right: 0;
 	text-align: center;
 	width: 100%;
 	padding: 12px;
-	background-color: #1e6;
+	background-color: var(--secundario);
 	color: #fff
 }
 .bad {
 	text-align: center;
 	width: 100%;
 	padding: 12px;
-	background-color: #a22;
+	background-color: var(--primarioOscuro);
 	color: #fff
 }
                                                                     /* Jeb&Dev */

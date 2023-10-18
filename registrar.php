@@ -17,7 +17,7 @@ if(isset($_POST["register"])){
         $resultado = mysqli_query($conex, $consulta);
         if($resultado){
             ?>
-            <h3 class="ok">¡Te has registrado correctamente!</h3>
+            <h3 class="ok">¡Registrado con Exito!!!</h3>
             <?php
         }else{
             ?>
