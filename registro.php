@@ -10,8 +10,8 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="http://localhost/virtualStore2/css/style.css">
+    <link rel="stylesheet" href="http://localhost/virtualStore2/css/menu.css">
 
 
     <title>Virtual Store</title>
@@ -19,7 +19,7 @@
 
 <body>
     <header class="header">
-        <a href="index.html">
+        <a href="index.php">
             <img class="header__logo" src="image/logo3.png" alt="logotipo">
         </a>
     </header>
@@ -30,48 +30,48 @@
         <i class="iconos fi fi-br-cross"></i>
 
         <ul class="menu menu__activo">
-           <li> <a class="menu__color" href="index.html">TIENDA</a></li>
-           <li><a href="nosotros.html">NOSOTROS</a></li>
-           <li><a href="login.html">LOGIN</a></li>
-           <li><a href="registro.html">REGISTRO</a></li>
+           <li> <a class="menu__color" href="index.php">TIENDA</a></li>
+           <li><a href="nosotros.php">NOSOTROS</a></li>
+           <li><a href="login.php">LOGIN</a></li>
+           <li><a href="registro.php">REGISTRO</a></li>
         </ul>
        
     </nav>
 
     <main class="contenedor__registro">
         <div class="registro">
-            <form action="#">
+            <form method="post">
                 <h1>REGISTRO</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Ingresa  nombre" required >
+                    <input type="text" placeholder="Ingresa  nombre" required  name="nombre" >
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Ingresa  Domicilio" required >
+                    <input type="text" placeholder="Ingresa  Domicilio" required  name="domicilio">
                     <i class='bx bxs-home-heart'></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Ingresa  Correo" required>
+                    <input type="email" placeholder="Ingresa  Correo" required name="email">
                     <i class='bx bx-mail-send'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Nueva Contraseña" required>
+                    <input type="password" placeholder="Nueva Contraseña" required name="pass">
                     <i class='bx bxs-lock-alt'></i>
                 </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Repite Contraseña" required>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
+             
                 <div class="recuerdame">
                     <label><input type="checkbox" name="" id="">  Recuerdame</label>
                     <a href="#">Has olvidado tu contraseña</a>
                 </div>
-                <button type="submit" class="btn">Acceso</button>
+                <button type="submit" class="btn" name="register">GUARDAR REGISTRO</button>
                 <div class="registro-link">
                     <p class="parrafo">¿No tienes una cuenta?</p>
                      <a href="#">Registrarse</a> 
                 </div>
             </form>
+            <?php 
+        include("registrar.php");
+        ?>
         </div>
 
     </main>
@@ -90,3 +90,4 @@
 
 </body>
 </html>
+                                                            <!-- Jeb&Dev -->

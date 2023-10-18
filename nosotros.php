@@ -9,14 +9,14 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="http://localhost/virtualStore2/css/style.css">
+    <link rel="stylesheet" href="http://localhost/virtualStore2/css/menu.css">
     <title>Virtual Store</title>
 </head>
 <body>
 
     <header class="header">
-        <a href="index.html">
+        <a href="index.php">
             <img class="header__logo" src="image/logo3.png" alt="logotipo">
         </a>
     </header>
@@ -28,10 +28,10 @@
         <i class="iconos fi fi-br-cross"></i>
 
         <ul class="menu">
-           <li> <a class="menu__color" href="index.html">TIENDA</a></li>
-           <li><a href="nosotros.html">NOSOTROS</a></li>
-           <li><a href="login.html">LOGIN</a></li>
-           <li><a href="registro.html">REGISTRO</a></li>
+           <li> <a class="menu__color" href="index.php">TIENDA</a></li>
+           <li><a href="nosotros.php">NOSOTROS</a></li>
+           <li><a href="login.php">LOGIN</a></li>
+           <li><a href="registro.php">REGISTRO</a></li>
         </ul>
        
     </nav>
