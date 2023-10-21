@@ -611,18 +611,22 @@ right: 0;
 .index-titulo{
   margin: 2rem 0;
 }
-.ok {
+.success {
 	text-align: center;
 	width: 100%;
 	padding: 12px;
-	background-color: var(--secundario);
-	color: #fff
+	background-color: green;
+	color: #fff;
+  font-weight: bolder;
+  font-size: 2rem;
 }
-.bad {
+.error{
 	text-align: center;
 	width: 100%;
 	padding: 12px;
-	background-color: var(--primarioOscuro);
-	color: #fff
+	background-color: red;
+	color: #fff;
+  font-weight: bolder;
+  font-size: 2rem;
 }
                                                                     /* Jeb&Dev */

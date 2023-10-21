@@ -1,11 +1,13 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$conexion = new mysqli("localhost", "root","root","vitualbd");
+$conexion = mysqli_connect("localhost", "root","root","virtualbd");
 
-if($conexion) {
-    echo "conexion erronea...";
-}else{
-    echo "hola";
+if (!$conexion) {
+    die("Conexión fallida: " . mysqli_connect_error());
+} else {
+    echo "Conexión Exitosa...";
 }
 
 

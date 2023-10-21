@@ -1,3 +1,4 @@
+<?php include_once('/apache/htdocs/virtualStore2/config/conexion.php');?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
