@@ -41,33 +41,41 @@
 
     <main class="contenedor__registro">
         <div class="registro">
-            <form method="post">
+            <form method="POST" action="config/registrar.php">
                 <h1>REGISTRO</h1>
-                <?php
-                include("registrar.php");
-                ?>
+                <br>
+
+                <?php if(isset($_GET["error"])){ ?>
+                <p class="error"><?php echo $_GET["error"] ?> </p>
+                <?php  } ?>
+                <br>
+
+                <?php if(isset($_GET["success"])){ ?>
+                <p class="success"><?php echo $_GET["success"]?> </p>
+                <?php } ?>
+
+               <br>
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre y Apellido"  name="nombre">
+                    <input type="text" placeholder="Usuario"  name="Usuario">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Domicilio Completo"  name="domicilio">
+                    <input type="text" placeholder="Nombre Completo"  name="NombreCompleto">
                     <i class='bx bxs-home-heart'></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Correo Electronico"  name="email">
+                    <input type="password" placeholder="Clave"  name="Clave">
                     <i class='bx bx-mail-send'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Crear Contraseña"  name="pass">
+                    <input type="password" placeholder="Repite Clave"  name="RClave">
                     <i class='bx bxs-lock-alt'></i>
                 </div>
-
                 <div class="recuerdame">
-                    <label><input type="checkbox" name="" id=""> Recuerdame</label>
-                    <a href="#">Has olvidado tu contraseña</a>
+                    <label><input type="checkbox" > Recuerdame</label>
+                    <a>Has olvidado tu contraseña</a>
                 </div>
-                <button type="submit" class="btn" name="register">GUARDAR REGISTRO</button>
+                <button type="submit" class="btn" >REGISTRARSE</button>
                 <div class="registro-link">
                     <p class="parrafo">¿No tienes una cuenta?</p>
                     <a href="#">Registrarse</a>
