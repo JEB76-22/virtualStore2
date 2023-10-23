@@ -437,6 +437,15 @@ right: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 30px;
 }
+.login .btn__login{
+  width: 50%;
+  background-color:  #d8ad02 !important;
+  line-height: 1em;
+}
+.login .btn__login:hover{
+  scale: (1/2);
+  background-color: #ffce00 !important;
+}
 @media (max-width: 768px) {
     .login {width: 80%;}
 }
@@ -543,6 +552,17 @@ right: 0;
   color: var(--blanco) !important;
   font-weight: 600;
 }
+.registro .btn__login{
+  width: 40%;
+  background-color:  #d8ad02 !important;
+  line-height: 1em;
+}
+.registro .btn__login:hover{
+  scale: (1/2);
+  background-color: #ffce00 !important;
+}
+
+
 .registro h1 {
   font-weight: bolder;
 }
@@ -614,7 +634,7 @@ right: 0;
 .success {
 	text-align: center;
 	width: 100%;
-	padding: 12px;
+	padding: 10px;
 	background-color: green;
 	color: #fff;
   font-weight: bolder;
@@ -623,7 +643,7 @@ right: 0;
 .error{
 	text-align: center;
 	width: 100%;
-	padding: 12px;
+	padding: 10px;
 	background-color: red;
 	color: #fff;
   font-weight: bolder;

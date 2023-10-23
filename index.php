@@ -1,4 +1,4 @@
-<?php include_once('/apache/htdocs/virtualStore2/config/conexion.php');?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -76,6 +76,7 @@
                 <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
+       
     </header>
 
     <nav class=" navbar"> 
@@ -296,4 +297,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
-

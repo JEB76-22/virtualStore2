@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
 
 
 session_start();
-
-include_once('/apache/htdocs/virtualStore2/config/conexion.php');
+// '/apache/htdocs/virtualStore2/config/conexion.php'
+include_once('conexion.php');
 if(isset($_POST["Usuario"]) && isset($_POST["NombreCompleto"]) && isset($_POST["Clave"]) && isset($_POST["RClave"])){
 
     function validar($data){
@@ -41,7 +41,9 @@ if(isset($_POST["Usuario"]) && isset($_POST["NombreCompleto"]) && isset($_POST["
         exit();
 
     }else{
-        $clave = md5($clave);
+        // $clave = md5($clave);
+        $clave = password_hash($clave, PASSWORD_DEFAULT);
+        
         $sql = "SELECT * FROM datos WHERE nombreUsuario = '$usuario'";
         $query = mysqli_query($conexion, $sql);
 

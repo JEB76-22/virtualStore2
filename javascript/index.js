@@ -82,9 +82,6 @@ productList.addEventListener("click", e => {
 
     });
 
-  
-
-
 // funcion para mostrar HTML
 
 
@@ -150,5 +147,14 @@ let totalDeProductos = 0;
     //mostramos el total de productos
     countProducts.innerText = totalDeProductos;
 };
+
+//registro.php
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("formu");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault() 
+    }) 
+});
+
 
 

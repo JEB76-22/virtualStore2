@@ -42,35 +42,35 @@
 
 
 
-            <form method="POST">
+            <form method="POST" action="config/loginAut.php">
                 <h1>LOGIN</h1>
                
+                <?php if(isset($_GET["error"])){ ?>
+                    <p class="error"><?php echo $_GET["error"]   ?> </p>
+                <?php } ?>
 
-                
+                <br>
                 <div class="input-box">
-                    <input type="text" placeholder="Usuario Nombre" name="nombre">
+                    <input type="text" placeholder="Ingrese Usuario" name="Usuario" autocomplete="off">
                     <i class='bx bxs-user'></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Contraseña" name="clave">
+                    <input type="password" placeholder="Ingrese Clave"name="Clave" autocomplete="off">
                     <i class='bx bxs-lock-alt'></i>
                 </div>
 
                 <div class="recuerdame">
                     <label><input type="checkbox"> Recuerdame</label>
-                    <a href="registro.html">Has olvidado tu contraseña</a>
+                    <a href="registro.php">Has olvidado tu contraseña</a>
                 </div>
-                <button type="submit" class="btn" name="inicio">Iniciar Sesión</button>
+                <button class="btn">Iniciar Sesión</button>
                 <div class="registro-link">
                     <p class="parrafo">¿No tienes una cuenta? </p>
-                    <a href="registro.php">Registrarse</a>
+                   <button class="btn btn_login"><a href="registro.php">Registrarse</a></button> 
                 </div>
             </form>
-
-
         </div>
-
     </main>
 
     <footer class="footer">
@@ -86,7 +86,6 @@
                 <figure><img src="image/linkedin.svg" width="24" height="24"></figure>
             </a>
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

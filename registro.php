@@ -41,7 +41,7 @@
 
     <main class="contenedor__registro">
         <div class="registro">
-            <form method="POST" action="config/registrar.php">
+            <form method="POST" action="config/registrar.php" id="formu">
                 <h1>REGISTRO</h1>
                 <br>
 
@@ -75,10 +75,10 @@
                     <label><input type="checkbox" > Recuerdame</label>
                     <a>Has olvidado tu contraseña</a>
                 </div>
-                <button type="submit" class="btn" >REGISTRARSE</button>
+                <button type="submit" class="btn"> REGISTRARSE</button>
                 <div class="registro-link">
                     <p class="parrafo">¿No tienes una cuenta?</p>
-                    <a href="#">Registrarse</a>
+                   <button class="btn btn__login"> <a href="login.php">Iniciar Sesion</a> </button> 
                 </div>
             </form>
         </div>
@@ -98,12 +98,10 @@
                 <figure><img src="image/linkedin.svg" width="24" height="24"></figure>
             </a>
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
 <!-- Jeb&Dev -->
