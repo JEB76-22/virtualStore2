@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 session_start();
 
 include_once("conexion.php");
+
 if(isset($_POST["Usuario"]) && isset($_POST["Clave"])){
 
     function validar($data){
@@ -43,16 +44,18 @@ if(isset($_POST["Usuario"]) && isset($_POST["Clave"])){
 
                     echo "<script>
                     alert('Bienvenido $NombreCompleto');
-                    window.location.href= '../index.php';
+                    window.location.href= '../inicio.php';
                     </script>";
                 }else{
-                    header('Location:../login.php?error= Usuario o Clave incorrecta..');
+                    header('location:../login.php= Usuario o Clave incorrecta..');
                 }
             }else{
                 header('Location:../login.php?error= Usuario o Clave incorrecta..');
+                exit();
             }
         }else{
             header('Location:../login.php?error= Usuario o Clave incorrecta..');
+            exit();
         }
 
     }
