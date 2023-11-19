@@ -1,4 +1,6 @@
+
 <?php
+/*
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -43,11 +45,11 @@ if(isset($_POST["Usuario"]) && isset($_POST["Clave"])){
                     $_SESSION["nombreCompleto"] = $NombreCompleto;
 
                     echo "<script>
-                    alert('Bienvenido $NombreCompleto');
+                    alert('Bienvenido $NombreCompleto');      
                     window.location.href= '../inicio.php';
                     </script>";
                 }else{
-                    header('location:../login.php= Usuario o Clave incorrecta..');
+                    header('Location:../login.php?error= Usuario o Clave incorrecta..');
                 }
             }else{
                 header('Location:../login.php?error= Usuario o Clave incorrecta..');
@@ -62,5 +64,5 @@ if(isset($_POST["Usuario"]) && isset($_POST["Clave"])){
         
     
 }
-
-?>
+*/
+?>  

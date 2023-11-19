@@ -41,7 +41,7 @@
 
     <main class="contenedor__registro">
         <div class="registro">
-            <form method="POST" action="config/registrar.php" id="formu">
+            <form method="POST" action="config/registro2.php" id="formu">
                 <h1>REGISTRO</h1>
                 <br>
 

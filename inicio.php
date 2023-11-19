@@ -117,6 +117,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">VueJS</p>
                         <h3 class="producto__precio">$ 6300</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart"> Agrega Carrito</button>
                     </div>
                 </a>
@@ -130,6 +131,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">AngularJS</p>
                         <h3 class="producto__precio">$ 6500</h3>
+                        <p></p>
                         <button class="btn btn-outline-warning btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -144,6 +146,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">ReactJS</p>
                         <h3 class="producto__precio">$ 6900</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -157,6 +160,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">Redux</p>
                         <h3 class="producto__precio">$ 6100</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -170,6 +174,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">NodeJS</p>
                         <h3 class="producto__precio">$ 6900</h3>  
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -197,6 +202,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">HTML5</p>
                         <h3 class="producto__precio">$ 6500</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -210,6 +216,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">GitHub</p>
                         <h3 class="producto__precio">$ 6400</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -237,6 +244,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">TypeScript</p>
                         <h3 class="producto__precio">$ 6200</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -249,6 +257,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">Drupal</p>
                         <h3 class="producto__precio">$6100</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
@@ -276,6 +285,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <div class="producto__informacion">
                         <p class="producto__nombre">GraphQL</p>
                         <h3 class="producto__precio">$ 6600</h3>
+                        <p></p>
                         <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>

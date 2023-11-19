@@ -6,7 +6,7 @@
  --secundarioOscuro: #d8ad02; 
  --blanco: #fff; 
  --negro:#000;
- --fuentePrincipal:"Staatliches", cursive;
+ --fuentePrincipal:'Staatliches', cursive;
 }
 
 .flecha{
