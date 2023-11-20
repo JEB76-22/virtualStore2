@@ -5,10 +5,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
-
 //la conexion ok
 include("conexion.php");
 // echo "Hola desde registro2";
+
 
 //traemos los datos del formulario
 $nombreCompleto = $_POST['NombreCompleto'];
@@ -18,9 +18,12 @@ $rClave = $_POST['RClave'];
 //hashamos la contraseña.
 $clave = hash('sha512', $clave);
 
+
 //guardamos en la base de datos
 $query = "INSERT INTO datos (nombreCompleto, nombreUsuario,   clave)
            VALUES ('$nombreCompleto','$usuario', '$clave' )";
+
+
 
 //si esta vacio
 if(empty($nombreCompleto)){
@@ -32,7 +35,7 @@ if(empty($nombreCompleto)){
     ';
     exit();               
 }
-//verificar nombre
+//verificar nombre, la consulta
 $VerificarNombre = mysqli_query($conexion, "SELECT * FROM datos WHERE nombreCompleto= '$nombreCompleto'");
 if(mysqli_num_rows($VerificarNombre) > 0 ){
     echo '
@@ -53,7 +56,8 @@ if(empty($usuario)){
     ';
     exit();               
 }
-//verificar usuario
+
+//verificar usuario, la consulta
 $VerificarUsuario = mysqli_query($conexion, "SELECT * FROM datos WHERE nombreUsuario= '$usuario'");
 if(mysqli_num_rows($VerificarUsuario) > 0 ){
     echo '
@@ -63,7 +67,6 @@ if(mysqli_num_rows($VerificarUsuario) > 0 ){
     </script>
     ';
     exit();//sale
-
 }
 
 //Ejecutamos la query

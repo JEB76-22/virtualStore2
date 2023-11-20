@@ -15,7 +15,7 @@ $clave = $_POST['Clave'];
 $clave = hash('sha512', $clave);
 //encriptamos la clave
 
-//valiadmos nombre , clave y redirigimos
+//valiadmos nombre , clave y redirigimos la consulta
 $validarLogin = mysqli_query($conexion, "SELECT * FROM datos WHERE nombreUsuario= '$usuario' AND clave='$clave'");
 if(mysqli_num_rows($validarLogin) > 0 ){
     echo '
