@@ -3,6 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+
 //la conexion oka
 include("conexion.php");
 // echo "Hola desde login2";

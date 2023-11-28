@@ -149,12 +149,34 @@ let totalDeProductos = 0;
 };
 
 //registro.php
-document.addEventListener("DOMContentLoaded", function () {
-    var form = document.getElementById("formu");
-    form.addEventListener("submit", function (e) {
-        e.preventDefault() 
-    }) 
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     var form = document.getElementById("formu");
+//     form.addEventListener("submit", function (e) {
+//         e.preventDefault() 
+//     }) 
+// });
 
+// btn up
+const btnUp = document.getElementById("up");
+// console.log(btnUp);
+window.addEventListener("scroll", (e)=>{
+    let y = document.documentElement.scrollTop;
+    if(y === 0){
+        btnUp.classList.add("hide");
+        btnUp.classList.remove("active");
+    }else if(y >= 200){
+        btnUp.classList.add("active");
+        btnUp.classList.remove("hide");
+    }
+})
 
+document.addEventListener("click", (e)=>{
+    if(e.target === btnUp || e.target.matches(".img-up")){
+        // alert("holaasss")
+        window.scrollTo({
+            behavior:"smooth",
+            top : 0
+        })
+    }
+})
 

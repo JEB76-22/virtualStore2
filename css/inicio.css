@@ -1,6 +1,6 @@
 /* globales ------------------------------------------------------------*/
 :root{
-    --primario:#4e1557;
+    --primario:#320f36;
     --primarioOscuro:#68116d; 
     --secundario:#ffce00;
     --secundarioOscuro: #d8ad02; 
@@ -290,9 +290,9 @@
    /* Graficos --------------------------------------------------------------------------*/
    /* ------------------------------------------------------------------------------------ */
    .grafico {
-     min-height: 40rem;
-     background-repeat: no-repeat;
-     background-size: cover;
+      min-height: 47rem; 
+      background-repeat: no-repeat; 
+      background-size: cover; 
      background-position: center;
      grid-column: 1 / 2;
    }
@@ -680,7 +680,35 @@
     width: 350px;
   }
 }
- 
+/* button up */
+.btn-up{
+  width: 50px;
+  height: 50px;
+  outline: 0;
+  border-radius: 50%;
+  border: 1px solid royalblue;
+  background: royalblue;
+  position: fixed;
+  right: 30px;
+  /* left: 90%; */
+  bottom: 30px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.btn-up:hover{
+  opacity: .75 ;
+}
+.image-up{
+  color: white;
+  font-size: 18px;
+}
+
+.hide{
+  display: none;
+}
+.active{
+  opacity: 1;
+}
 
 
 

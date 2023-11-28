@@ -282,7 +282,9 @@
             <div class="grafico grafico--node "></div>
         </div>
     </main>
-
+    <button class="btn-up hide" id="up" >
+        <img src="image/chevron-doble.png" alt="flecha arriba" class="img-up">
+    </button>
     <footer class="footer">
         <p class="footer__texto">Virtual Store - &#169 Todos los derechos reservados 2023 . </p>
         <div class="footer__iconos">
@@ -290,7 +292,6 @@
     <div class="footer__texto"><p>Jeb&Dev</p></div>
     <a href="https://www.linkedin.com/in/javier-eduardo-berchtold-4270a7182/" target="_blank"><figure><img src="image/linkedin.svg" width="24" height="24"></figure></a>
         </div>
-     
     </footer>
 
     <script src="javascript/index.js"></script>
