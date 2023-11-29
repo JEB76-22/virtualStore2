@@ -1,3 +1,5 @@
+
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
 
@@ -96,7 +98,9 @@ const showHTML = () => {
 		rowProduct.classList.remove('hidden');
 		cartTotal.classList.remove('hidden');
 	}
-    //si el carrito esta vacio, le quitamos la clase hidden cartEmpt y agregamos la clase hidden a rowProduct y cartTotal. sino agregamos la clase hidden a cartEmpty y removemos la clase hidden a rowProduct y cartTotal. 
+    //si el carrito esta vacio, le quitamos la clase hidden cartEmpt
+    // y agregamos la clase hidden a rowProduct y cartTotal. 
+    //sino agregamos la clase hidden a cartEmpty y removemos la clase hidden a rowProduct y cartTotal. 
 
 
     // LimpiarHTML
@@ -107,7 +111,8 @@ let total = 0;
 let totalDeProductos = 0;
 
 
-//recorremos allProducts con forEach, creamos la const containerProduct creando div en html y creamos una clase  cart-product.
+//recorremos allProducts con forEach, creamos la const containerProduct creando div en html
+// y creamos una clase  cart-product.
     allProducts.forEach(product =>{
         const containerProduct = document.createElement('div');
         containerProduct.classList.add('cart-product');
@@ -118,26 +123,30 @@ let totalDeProductos = 0;
         <span class="titulo-producto-carrito">${product.titulo}</span>
         <h3 class="precio-producto-carrito">${product.precio}</h3>
         </div>
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="icon-close"
-        >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-        />
-        </svg>
+        
+    <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-close">
+          <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"/>
+     </svg>
+      
+      
+
+   
 
         `;
         //a rowProduct le asignamos el div containerProduct
         rowProduct.append(containerProduct);
 
-        //la variable total convertimos a entero y le multiplicamos por el precio, recortando la parte decimal. y la sumamos
+        //la variable total convertimos a entero y le multiplicamos por el precio, 
+        //recortando la parte decimal. y la sumamos
         total = total + parseInt(product.cantidad * product.precio.slice(1));
         //la variable totalDeProductos le sumamos la cantidad del producto.
         totalDeProductos = totalDeProductos + product.cantidad;
@@ -147,14 +156,6 @@ let totalDeProductos = 0;
     //mostramos el total de productos
     countProducts.innerText = totalDeProductos;
 };
-
-//registro.php
-// document.addEventListener("DOMContentLoaded", function () {
-//     var form = document.getElementById("formu");
-//     form.addEventListener("submit", function (e) {
-//         e.preventDefault() 
-//     }) 
-// });
 
 // btn up
 const btnUp = document.getElementById("up");

@@ -85,6 +85,7 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
     </nav>
 
     <main class="contenedor">
+
         <h1 class="index-titulo">Nuestros Productos</h1>
 
         <div class="grid">
@@ -282,6 +283,43 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     </div>
                 </a>
             </div><!--producto fin -->
+
+            <div class="producto item" id="producto-14">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/2.jpg" alt="imagen camisa">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Angular</p>
+                        <h3 class="producto__precio">$ 6900</h3>
+                        <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-14">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/3.jpg" alt="imagen camisa">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">React</p>
+                        <h3 class="producto__precio">$ 6900</h3>
+                        <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-14">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/11.jpg" alt="imagen camisa">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Drupal</p>
+                        <h3 class="producto__precio">$ 6900</h3>
+                        <button class="btn btn-outline-info btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
             <div class="grafico grafico--camisas "></div>
          
             <div class="grafico grafico--node "></div>
@@ -292,13 +330,13 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="image/nosotros.jpg" class="d-block w-100" alt="foto remera">
+                    <img src="image/nosotros.jpg" class="d-block w-90" alt="foto remera">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="image/grafico2.jpg" class="d-block w-100" alt="...">
+                    <img src="image/grafico2.jpg" class="d-block w-90" alt="...">
                 </div class="container">
                 <div class="carousel-item">
-                    <img src="image/grafico1.jpg" class="d-block w-100" alt="...">
+                    <img src="image/grafico1.jpg" class="d-block w-90" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -309,11 +347,13 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+         </div>
         </div>
     </div>
     <button class="btn-up hide" id="up">
         <img src="image/chevron-doble.png" alt="flecha arriba" class="img-up">
     </button>
+
     <footer class="footer">
         <p class="footer__texto">Virtual Store - &#169 Todos los derechos reservados 2023 . </p>
         <div class="footer__iconos">
