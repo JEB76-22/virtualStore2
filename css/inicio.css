@@ -679,6 +679,7 @@
     right: -160px;
     width: 350px;
   }
+ 
 }
 /* button up */
 .btn-up{
@@ -709,6 +710,23 @@
 .active{
   opacity: 1;
 }
+
+.slide{
+  margin-top: 10px;
+}
+.slide img{
+  height: 65vh;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

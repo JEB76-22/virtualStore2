@@ -83,11 +83,11 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
             <li><a href="inicio.php">REGISTRO</a></li>
         </ul>
     </nav>
-
+    
     <main class="contenedor">
 
-        <h1 class="index-titulo">Nuestros Productos</h1>
 
+    <h1 class="index-titulo">Nuestros Productos</h1>
         <div class="grid">
             <div class="producto item" id="producto-1">
                 <a class="producto__imagen">
