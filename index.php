@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="http://localhost/virtualStore2/css/style.css">
     <link rel="stylesheet" href="http://localhost/virtualStore2/css/menu.css">
+    <link rel="icon" tupe="image/png" href="image/icons8-favicon-32.png">
     <title>Virtual Store</title>
 </head>
 
@@ -89,6 +90,13 @@
            <li><a href="nosotros.php">NOSOTROS</a></li>
            <li><a href="login.php">LOGIN</a></li>
            <li><a href="registro.php">REGISTRO</a></li>
+           <li>
+              <select id="selector" class="select">
+                <option value="producto-7">Remeras</option>
+                <option value="producto-18">Gorras</option>
+                <option value="producto-27">Shorts</option>
+             </select>
+            </li>
         </ul>
        
     </nav>
@@ -278,7 +286,7 @@
                     </div>
                 </a>
             </div><!--producto fin -->
-            <div class="producto item" id="producto-14">
+            <div class="producto item" id="producto-15">
                 <a class="producto__imagen">
                     <figure>
                         <img src="image/2.jpg" alt="imagen camisa">
@@ -290,7 +298,7 @@
                     </div>
                 </a>
             </div><!--producto fin -->
-            <div class="producto item" id="producto-14">
+            <div class="producto item" id="producto-16">
                 <a class="producto__imagen">
                     <figure>
                         <img src="image/3.jpg" alt="imagen camisa">
@@ -302,7 +310,7 @@
                     </div>
                 </a>
             </div><!--producto fin -->
-            <div class="producto item" id="producto-14">
+            <div class="producto item" id="producto-17">
                 <a class="producto__imagen">
                     <figure>
                         <img src="image/11.jpg" alt="imagen camisa">
@@ -314,9 +322,197 @@
                     </div>
                 </a>
             </div><!--producto fin -->
+
+             <!-- gorras -->
+        <div class="producto item" id="producto-18">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-azul.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">MLB Cooperstown</p>
+                        <h3 class="producto__precio">$ 15100</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-19">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-blanca.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">NIKE DRI-FIT</p>
+                        <h3 class="producto__precio">$ 10700</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-20">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-negra.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">47 CLEAN UP</p>
+                        <h3 class="producto__precio">$ 17600</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-21">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-marron.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">BOSS men's</p>
+                        <h3 class="producto__precio">$ 22200</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-22">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-celeste.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Zephyr Women's</p>
+                        <h3 class="producto__precio">$ 23500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-23">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-gris.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">47 MLB Khaki</p>
+                        <h3 class="producto__precio">$ 12700</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-24">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-roja.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Zephyr Nebraska</p>
+                        <h3 class="producto__precio">$ 26400</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-25">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-miky.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Disney  de béisbol</p>
+                        <h3 class="producto__precio">$ 14700</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-26">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/gorra-vordo.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Cachucha NCCAA</p>
+                        <h3 class="producto__precio">$ 22500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            
+            <!-- shorts -->
+            <div class="producto item" id="producto-27">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/short-rojo.jpg" alt="imagen short">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Amazon Essentials</p>
+                        <h3 class="producto__precio">$ 20500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-28">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/short-verde.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Amazon Essentials</p>
+                        <h3 class="producto__precio">$ 22500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-29">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/short-camauflado.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Amazon Essentials</p>
+                        <h3 class="producto__precio">$ 22500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+
+            <div class="producto item" id="producto-30">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/short4.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">short dama</p>
+                        <h3 class="producto__precio">$ 12500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-31">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/short5.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">short dama</p>
+                        <h3 class="producto__precio">$ 12700</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
+            <div class="producto item" id="producto-32">
+                <a class="producto__imagen">
+                    <figure>
+                        <img src="image/short6.jpg" alt="imagen gorra">
+                    </figure>
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">short dama</p>
+                        <h3 class="producto__precio">$ 11500</h3>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
+                    </div>
+                </a>
+            </div><!--producto fin -->
             <div class="grafico grafico--camisas "></div>
             <div class="grafico grafico--node "></div>
         </div>
+
+   
+    
     </main>
     <button class="btn-up hide" id="up" >
         <img src="image/chevron-doble.png" alt="flecha arriba" class="img-up">

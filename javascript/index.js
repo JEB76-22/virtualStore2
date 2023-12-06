@@ -157,7 +157,7 @@ let totalDeProductos = 0;
     countProducts.innerText = totalDeProductos;
 };
 
-// btn up
+// btn up /////////////////////////
 const btnUp = document.getElementById("up");
 // console.log(btnUp);
 window.addEventListener("scroll", (e)=>{
@@ -181,3 +181,11 @@ document.addEventListener("click", (e)=>{
     }
 })
 
+//////////////////////////////////////////
+document.getElementById('selector').addEventListener('change', function() {
+    var selectedOption = this.options[this.selectedIndex].value;
+    var targetElement = document.getElementById(selectedOption);
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+});

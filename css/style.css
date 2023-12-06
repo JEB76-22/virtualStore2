@@ -631,6 +631,7 @@ right: 0;
 .index-titulo{
   margin: 2rem 0;
 }
+
 .success {
 	text-align: center;
 	width: 100%;
@@ -679,7 +680,10 @@ right: 0;
 .active{
   opacity: 1;
 }
-
+.select{
+  background-color: var(--secundarioOscuro) !important;
+  color:white !important;
+}
 
 
 
