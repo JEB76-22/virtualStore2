@@ -172,14 +172,14 @@
             </div><!--producto fin -->
 
             <div class="producto item" id="producto-6">
-                <a class="producto__imagen" href="producto.php" >
+                <a class="producto__imagen"  >
                     <figure>
                         <img src="image/6.jpg" alt="imagen camisa">
                     </figure>
                     <div class="producto__informacion">
                         <p class="producto__nombre">SASS</p>
                         <h3 class="producto__precio">$ 6800</h3>
-                        <button class="btn btn-primary btn-lg ">Agrega Carrito</button>
+                        <button class="btn btn-primary btn-lg btn-add-cart">Agrega Carrito</button>
                     </div>
                 </a>
             </div><!--producto fin -->
@@ -507,12 +507,11 @@
                     </div>
                 </a>
             </div><!--producto fin -->
+            
             <div class="grafico grafico--camisas "></div>
             <div class="grafico grafico--node "></div>
         </div>
 
-   
-    
     </main>
     <button class="btn-up hide" id="up" >
         <img src="image/chevron-doble.png" alt="flecha arriba" class="img-up">

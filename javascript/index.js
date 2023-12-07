@@ -165,7 +165,7 @@ window.addEventListener("scroll", (e)=>{
     if(y === 0){
         btnUp.classList.add("hide");
         btnUp.classList.remove("active");
-    }else if(y >= 200){
+    }else if(y >= 800){
         btnUp.classList.add("active");
         btnUp.classList.remove("hide");
     }
