@@ -19,8 +19,26 @@
 <body>
     <header class="header">
         <a href="index.php">
-            <img class="header__logo" src="image/logo3.png" alt="logotipo">
+            <img  src="image/logo3.png" alt="logotipo">
         </a>
+        <div class="pinos">
+            <svg width="200" height="200" viewBox="-100 -100 200 200">
+                <defs>
+                    <g id="tree">
+                        <polygon points="-10,0 10,0 0 -50" fill="#38755b" />
+                        <line x1="0" y1="0" x2="0" y2="10" stroke="#778074" stroke-width="2" />
+                    </g>
+                </defs>
+
+                <rect x="-100" y="-100" width="200" height="200" fill="#F1DBC3" />
+                <circle cx="0" cy="380" r="350" fill="#F8F4E8" />
+
+                <use href="#tree" x="-30" y="25" transform="scale(2)" />
+                <use href="#tree" x="-20" y="40" transform="scale(1.2)" />
+                <use href="#tree" x="40" y="40" />
+                <use href="#tree" x="50" y="30" transform="scale(1.5)" />
+            </svg>
+        </div>
     </header>
 
     <nav class=" navbar">
@@ -44,8 +62,8 @@
 
             <form method="POST" action="config/login2.php">
                 <h1>LOGIN</h1>
-               
-                <?php if(isset($_GET["error"])){ ?>
+
+                <?php if (isset($_GET["error"])) { ?>
                     <p class="error"><?php echo $_GET["error"]   ?> </p>
                 <?php } ?>
 
@@ -56,7 +74,7 @@
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Ingrese Clave"name="Clave" autocomplete="off">
+                    <input type="password" placeholder="Ingrese Clave" name="Clave" autocomplete="off">
                     <i class='bx bxs-lock-alt'></i>
                 </div>
 
@@ -67,7 +85,7 @@
                 <button class="btn">Iniciar Sesión</button>
                 <div class="registro-link">
                     <p class="parrafo">¿No tienes una cuenta? </p>
-                   <button class="btn btn_login"><a href="registro.php">Registrarse</a></button> 
+                    <button class="btn btn_login"><a href="registro.php">Registrarse</a></button>
                 </div>
             </form>
         </div>

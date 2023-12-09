@@ -29,8 +29,8 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
 
 <body>
     <header class="header">
-        <div>
-            <a href="inicio.php"><img class="header__logo" src="image/logo4.webp" alt="logotipo"></a>
+        <div class="container-logo">
+            <a><img class="header__logo" src="image/logo4.webp" alt="logotipo"></a>
         </div>
 
         <div class="container-icon">
@@ -42,7 +42,6 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
                     <span id="contador-productos">0</span>
                 </div>
             </div>
-
 
             <div class="container-cart-products hidden-cart">
                 <div class="row-product hidden">
@@ -78,15 +77,15 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
         <i class="iconos fi fi-br-cross"></i>
 
         <ul class="menu">
-            <li> <a class="menu__color" href="inicio.php">TIENDA</a></li>
-            <li><a href="inicio.php">NOSOTROS</a></li>
-            <li><a href="inicio.php">LOGIN</a></li>
-            <li><a href="inicio.php">REGISTRO</a></li>
+            <li> <a href="#" class="menu__color">TIENDA</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">REGISTRO</a></li>
             <li>
             <select id="selector" class="select">
-                <option value="producto-7">Remeras</option>
+                <option value="producto-7">remeras</option>
                 <option value="producto-18">Gorras</option>
-                <option value="producto-27">Shorts</option>
+                <option value="producto-27">shorts</option>
              </select>
             </li>
         </ul>

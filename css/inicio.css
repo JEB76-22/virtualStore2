@@ -72,18 +72,26 @@
  /* ---------------------------------------------------------------- */
  .header {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    margin-bottom: 3rem;
  }
  @media (max-width:768px) {
     .header{
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap:2rem;
     }
-  
+    .container-logo{
+      position: relative;
+      left: 35px;
+      top:5px;
+    }
+ 
  }
  
+
+
  .container-icon{
    position: relative;
  }
@@ -697,27 +705,26 @@
  .select{
    background-color: var(--secundario) !important;
    color:white !important;
+   cursor: pointer;
  }
  .usuario{
   position: relative;
   top: 110px;
-  right: 0px;
- }
- @media(max-width:768px){
-  .usuario{
-    top:30px;
-    right: 20px;
-  }
+  cursor: pointer;
  }
  .usuario a{
-  color: #ffce00;
-  font-size: large;
- }
- .usuario a:hover{
-  color:red;
-  cursor:progress;
- }
- 
+   color: #ffce00;
+   font-size: large;
+  }
+  .usuario a:hover{
+    color:red;
+  }
+  @media(max-width:768px){
+   .usuario{
+     top:30px;
+   }
+  }
+  
  
  
  

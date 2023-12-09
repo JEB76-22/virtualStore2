@@ -20,9 +20,45 @@
 
 <body>
     <header class="header">
+        <div>
         <a href="index.php">
-            <img class="header__logo" src="image/logo3.png" alt="logotipo">
+            <img  src="image/logo3.png" alt="logotipo">
         </a>
+        </div>
+        
+        <div class="copos">
+            <svg width="200" height="200" viewBox="-100 -100 200 200">
+                <defs>
+                    <g id="tree">
+                        <polygon points="-10,0 10,0 0 -50" fill="#38755b" />
+                        <line x2="0" y2="10" stroke="#778074" stroke-width="2" />
+                    </g>
+                    <circle id="big" cx="0" cy="0" r="5" fill="white" />
+                    <circle id="small" cx="0" cy="0" r="3" fill="white" />
+                </defs>
+
+                <rect x="-100" y="-100" width="200" height="200" fill="#F1DBC3" />
+                <circle cx="0" cy="380" r="350" fill="#F8F4E8" />
+
+                <use href="#tree" x="-30" y="25" transform="scale(2)" />
+                <use href="#tree" x="-20" y="40" transform="scale(1.2)" />
+                <use href="#tree" x="40" y="40" />
+                <use href="#tree" x="50" y="30" transform="scale(1.5)" />
+
+                <use href="#big" x="0" y="0" class="flake fast" />
+                <use href="#big" x="-50" y="-20" class="flake fast opaque" />
+                <use href="#big" x="30" y="-40" class="flake fast" />
+                <use href="#big" x="50" y="-20" class="flake fast opaque" />
+                <use href="#big" x="30" y="50" class="flake slow" />
+                <use href="#big" x="-70" y="-80" class="flake slow opaque" />
+                <use href="#big" x="30" y="50" class="flake slow" />
+                <use href="#big" x="90" y="-80" class="flake slow opaque" />
+                <use href="#small" x="10" y="-50" class="flake slow" />
+                <use href="#small" x="-50" y="-60" class="flake slow opaque" />
+                <use href="#small" x="30" y="70" class="flake slow" />
+                <use href="#small" x="10" y="-80" class="flake slow opaque" />
+            </svg>
+        </div>
     </header>
 
     <nav class=" navbar">
@@ -45,40 +81,40 @@
                 <h1>REGISTRO</h1>
                 <br>
 
-                <?php if(isset($_GET["error"])){ ?>
-                <p class="error"><?php echo $_GET["error"] ?> </p>
+                <?php if (isset($_GET["error"])) { ?>
+                    <p class="error"><?php echo $_GET["error"] ?> </p>
                 <?php  } ?>
                 <br>
 
-                <?php if(isset($_GET["success"])){ ?>
-                <p class="success"><?php echo $_GET["success"]?> </p>
+                <?php if (isset($_GET["success"])) { ?>
+                    <p class="success"><?php echo $_GET["success"] ?> </p>
                 <?php } ?>
 
-               <br>
+                <br>
                 <div class="input-box">
-                    <input type="text" placeholder="Usuario"  name="Usuario">
+                    <input type="text" placeholder="Usuario" name="Usuario">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre Completo"  name="NombreCompleto">
+                    <input type="text" placeholder="Nombre Completo" name="NombreCompleto">
                     <i class='bx bxs-home-heart'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Clave"  name="Clave">
+                    <input type="password" placeholder="Clave" name="Clave">
                     <i class='bx bx-mail-send'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Repite Clave"  name="RClave">
+                    <input type="password" placeholder="Repite Clave" name="RClave">
                     <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="recuerdame">
-                    <label><input type="checkbox" > Recuerdame</label>
+                    <label><input type="checkbox"> Recuerdame</label>
                     <a>Has olvidado tu contraseña</a>
                 </div>
                 <button type="submit" class="btn"> REGISTRARSE</button>
                 <div class="registro-link">
                     <p class="parrafo">¿No tienes una cuenta?</p>
-                   <button class="btn btn__login"> <a href="login.php">Iniciar Sesion</a> </button> 
+                    <button class="btn btn__login"> <a href="login.php">Iniciar Sesion</a> </button>
                 </div>
             </form>
         </div>
@@ -103,5 +139,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
 <!-- Jeb&Dev -->
