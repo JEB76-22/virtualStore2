@@ -63,11 +63,6 @@
             <form method="POST" action="config/login2.php">
                 <h1>LOGIN</h1>
 
-                <?php if (isset($_GET["error"])) { ?>
-                    <p class="error"><?php echo $_GET["error"]   ?> </p>
-                <?php } ?>
-
-                <br>
                 <div class="input-box">
                     <input type="text" placeholder="Ingrese Usuario" name="Usuario" autocomplete="off">
                     <i class='bx bxs-user'></i>

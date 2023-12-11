@@ -79,18 +79,7 @@
         <div class="registro">
             <form method="POST" action="config/registro2.php" id="formu">
                 <h1>REGISTRO</h1>
-                <br>
-
-                <?php if (isset($_GET["error"])) { ?>
-                    <p class="error"><?php echo $_GET["error"] ?> </p>
-                <?php  } ?>
-                <br>
-
-                <?php if (isset($_GET["success"])) { ?>
-                    <p class="success"><?php echo $_GET["success"] ?> </p>
-                <?php } ?>
-
-                <br>
+             
                 <div class="input-box">
                     <input type="text" placeholder="Usuario" name="Usuario">
                     <i class='bx bxs-user'></i>

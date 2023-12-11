@@ -515,31 +515,58 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
     </div>
       
     </main>
+    <section>
+        <div class="slaider">
+            <div class="slide-track">
 
-    <div class="container">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="image/nosotros.jpg" class="d-block w-90" alt="foto remera">
+                <div class="slide">
+                    <img src="image/gorra-azul.jpg" alt="gorra">
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="image/grafico2.jpg" class="d-block w-90" alt="...">
-                </div class="container">
-                <div class="carousel-item">
-                    <img src="image/grafico1.jpg" class="d-block w-90" alt="...">
+                <div class="slide">
+                    <img src="image/7-s.jpg" alt="gorra">
                 </div>
+                <div class="slide">
+                    <img src="image/gorra-vordo.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-gris.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/4-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/14-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-negra.jpg" alt="gorra">
+                </div>
+                <!-- ////////////////////////////////////////////////////////////////////// -->
+                <div class="slide">
+                    <img src="image/gorra-azul.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/7-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-vordo.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-gris.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/4-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/14-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-negra.jpg" alt="gorra">
+                </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-         </div>
         </div>
-    </div>
+    </section>
+ 
     <button class="btn-up hide" id="up">
         <img src="image/chevron-doble.png" alt="flecha arriba" class="img-up">
     </button>

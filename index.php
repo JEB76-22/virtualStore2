@@ -523,6 +523,57 @@
         </div>
 
     </main>
+    <section>
+        <div class="slaider">
+            <div class="slide-track">
+
+                <div class="slide">
+                    <img src="image/gorra-azul.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/7-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-vordo.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-gris.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/4-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/14-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-negra.jpg" alt="gorra">
+                </div>
+                <!-- ////////////////////////////////////////////////////////////////////// -->
+                <div class="slide">
+                    <img src="image/gorra-azul.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/7-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-vordo.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-gris.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/4-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/14-s.jpg" alt="gorra">
+                </div>
+                <div class="slide">
+                    <img src="image/gorra-negra.jpg" alt="gorra">
+                </div>
+
+            </div>
+        </div>
+    </section>
     <button class="btn-up hide" id="up" >
         <img src="image/chevron-doble.png" alt="flecha arriba" class="img-up">
     </button>
