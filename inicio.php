@@ -77,10 +77,10 @@ $nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado';
         <i class="iconos fi fi-br-cross"></i>
 
         <ul class="menu">
-            <li> <a href="#" class="menu__color">TIENDA</a></li>
-            <li><a href="#">NOSOTROS</a></li>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">REGISTRO</a></li>
+            <li> <a  class="menu__color">TIENDA</a></li>
+            <li><a >NOSOTROS</a></li>
+            <li><a >LOGIN</a></li>
+            <li><a >REGISTRO</a></li>
             <li>
             <select id="selector" class="select">
                 <option value="producto-7">remeras</option>

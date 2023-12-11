@@ -24,8 +24,16 @@ $clave = hash('sha512', $clave);
 $query = "INSERT INTO datos (nombreCompleto, nombreUsuario,   clave)
            VALUES ('$nombreCompleto','$usuario', '$clave' )";
 
-
-
+//si esta vacio
+if(empty($rClave)){
+    echo '
+    <script>
+    alert("La Clave esta vacia, Ingresa nuevamente..");
+    window.location="../registro.php"; 
+    </script>
+    ';
+    exit();               
+}
 //si esta vacio
 if(empty($nombreCompleto)){
     echo '
@@ -47,6 +55,7 @@ if(mysqli_num_rows($VerificarNombre) > 0 ){
     ';
     exit();//sale
 }
+
 //si esta vacio
 if(empty($usuario)){
     echo '

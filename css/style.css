@@ -125,13 +125,17 @@ right: 0;
   position: absolute;
   top: 200px;
   right: 0;
-
   background-color: #fff;
   width: 400px;
   z-index: 1;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
   border-radius: 10px;
   
+}
+@media (max-width:420px){
+  .container-cart-products{ 
+    width: 350px;
+  }
 }
 
 .cart-product{
